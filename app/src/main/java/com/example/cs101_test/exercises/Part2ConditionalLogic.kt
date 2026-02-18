@@ -5,6 +5,11 @@ object Part2ConditionalLogic {
     // Create a function that takes an integer as a parameter and returns "Positive", "Negative", or "Zero".
     fun checkNumber(number: Int): String {
         // Your code here
+        if(number > 0){
+            return "Positive"
+        } else{
+            return "Negative"
+        }
         return ""
     }
 
