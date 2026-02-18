@@ -17,6 +17,10 @@ object Part2ConditionalLogic {
     // Create a function that takes a string and prints each character on a new line.
     fun printChars(input: String) {
         // Your code here
+        for(char in input){
+            println(char)
+        }
+
     }
 
     // ---------------------- EXERCISE 3
@@ -24,6 +28,7 @@ object Part2ConditionalLogic {
     // For example if input is 45 then output should be 9 (4+5)
     fun sumDigits(number: Int): Int {
         // Your code here
+
         return 0
     }
 
@@ -32,7 +37,16 @@ object Part2ConditionalLogic {
     // For example if input is (1,2,3,4,5) then output should be (1,3,5)
     fun filterOddNumbers(numbers: List<Int>): List<Int> {
         // Your code here
-        return listOf()
+        var newList: MutableList<Int> = mutableListOf()
+        for(i in numbers){
+            if(i % 2!=0){
+                newList.add(i)
+            } else{
+                return numbers
+            }
+        }
+        println(newList)
+        return newList
     }
 
     // ---------------------- EXERCISE 5
